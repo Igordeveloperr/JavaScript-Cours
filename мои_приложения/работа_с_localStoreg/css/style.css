@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+    background: #4CAF50;
+}
+.product{
+    border-bottom: 2px solid #E91E63;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding: 20px;
+}
+.product h3, p{
+    color: #E91E63;
+    font-size: 20px;
+}
+.product img{
+    width: 200px;
+    height: 200px;
+}
+.buyBtn{
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    background: #009688;
+}
