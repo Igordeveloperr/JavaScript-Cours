@@ -1,5 +1,5 @@
-// получаю товары из локального хранилища и преобразую их в массив
-let productArray = JSON.parse(localStorage.getItem("products"));
+// получаю товары из локального хранилища и преобразую их в массив. Ну и переварачиваю массивчик
+let productArray = JSON.parse(localStorage.getItem("products")).reverse();
 
 // объявляю класс, который будет работать с корзиной
 class Basket{
