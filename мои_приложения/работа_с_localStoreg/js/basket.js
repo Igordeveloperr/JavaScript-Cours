@@ -1,6 +1,6 @@
 // получаю товары из локального хранилища и преобразую их в массив. Ну и переварачиваю массивчик
 let productArray = JSON.parse(localStorage.getItem("products")).reverse();
-
+let productCount = JSON.parse(localStorage.getItem("count"));
 // объявляю класс, который будет работать с корзиной
 class Basket{
     // метод для вывода товаров, которые были добавленны в корзину
@@ -16,6 +16,7 @@ class Basket{
                 out += `<p>${arr[i]['description']}</p>`;
             out += `</div>`;
             out += `<div class="buy">`;
+                out += `<p>${productCount == null ? "1" : productCount}</p>`
                 out += `<p>${arr[i]['price']}$</p>`;
                 out += `<button class="buyBtn">Заказать</button>`;
             out += `</div>`;
