@@ -12,7 +12,7 @@ console.log(arr);
 arr.push(6);
 console.log(arr);
 
-// удаляю последний елемент массива
+// удаляю первый елемент массива
 arr.shift();
 console.log(arr);
 

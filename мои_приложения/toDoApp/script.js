@@ -1,8 +1,6 @@
-const input = document.querySelector("#create-task"),
-addBtn = document.querySelector("#addTask"),
-deleteBtn = document.querySelectorAll(".deleteBtn");
+const addBtn = document.querySelector("#addTask"),
+input = document.querySelector("#create-task");
 let tasks = [];
-
 class Task{
     constructor(task){
         this.task = task;
@@ -21,10 +19,24 @@ class Task{
 
             outBlock.innerHTML = out;
         }
+        input.value = "";
+    }
+    deleteTask(){
+        const deleteBtn = document.querySelectorAll(".deleteBtn");
+        for(let i = 0; i < deleteBtn.length; i++){
+            deleteBtn[i].addEventListener("click", (e) => {
+                let element = e.target,
+                articyl = element.getAttribute("articyl"),
+                index = Number(articyl);
+                element.parentNode.remove(element);
+                tasks.splice(index, 1);
+            });
+        }
     }
 }
 
 addBtn.addEventListener("click", () => {
     let obj = new Task(input.value);
     obj.addTask();
+    obj.deleteTask();
 });
