@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.rain{
+    height: 100vh;
+    background: #27ae60;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.drop{
+    width: 200px;
+    height: 200px;
+    background: #8e44ad;
+    margin: 0 auto;
+    transition: all ease 1s;
+}
+button{
+    margin-bottom: -100%;
+}
+.active{
+    transform: translateY(100%);
+}
