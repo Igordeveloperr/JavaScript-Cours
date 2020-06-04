@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+}
+.progress_bar{
+    height: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 40px;
+    transition: all ease 0.1s;
+}
+button{
+    width: 500px;
+    height: 50px;
+    font-weight: bold;
+    background: red;
+    border: none;
+    color: #fff;
+    font-size: 34px;
+}
