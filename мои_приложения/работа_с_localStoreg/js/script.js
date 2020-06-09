@@ -61,22 +61,22 @@ class Card{
     turnOnBtnEvents(obj){
         const btn = document.querySelectorAll(".buyBtn"); // получаю все кнопочки
         let product = [], // создаю вспомогательный массив, в который буду записывать продукты, после нажатия кнопки "Buy"
-        dinamichProducts = [];
+        arr = [];
         // перебираю массив с кнопками и на каждую из них вешаю событие
         for(let i = 0; i < btn.length; i++){
             btn[i].addEventListener("click", (e) => {
                 let element = e.target, // узнаю на какую именно кнопку нажали
                     articul = element.getAttribute("data-articul"); // получаю артикул нажатой кнопочки
-                if (obj[articul]["count"] === undefined){
+                if (obj[articul]["count"] == undefined){
                     obj[articul]["count"] = 1;
                     product.push(obj[articul]); // добавляю товар в массив, у которого артикул совпадает с артикулом нажатой кнопки 
                     localStorage.setItem("products", JSON.stringify(product)); // добавляю массив с товарами в локальное хранилище, точнее преобразую массив в строку и добавляю в хранилище
                 }
                 else{
-                    let count = obj[articul]["count"] = 2;
-                    count++;
-                    console.log(count);
-                    localStorage.setItem("count", JSON.stringify(count));
+                    localStorage.clear();
+                    obj[articul]["count"]++;
+                    arr.push(obj[articul]);
+                    localStorage.setItem("products", JSON.stringify(arr));
                 }
             });
         }

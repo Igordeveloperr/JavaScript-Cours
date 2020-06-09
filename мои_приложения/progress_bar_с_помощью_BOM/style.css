@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;  
+}
+body{
+    height: 11000px;
+}
+.progress-bar{
+    height: 10px;
+    width: 0%;
+    background: green;
+    transition: all ease 0.1s;
+    position: fixed;
+}
