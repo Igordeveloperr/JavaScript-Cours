@@ -1,9 +1,11 @@
 let bar = document.querySelector(".progress-bar");
 
 showProgressBar = (elem) =>{
-    let val = window.pageYOffset / 100;
+    let body = document.querySelector("body").clientHeight;
+    val = (window.pageYOffset * 100) / body;
     elem = bar;
-    val >= 100 ? elem.style.width = 100 + "%":elem.style.width = val + "%";
+    elem.style.width = val + "%";
+    console.log(body);
 }
 
 window.onscroll = showProgressBar;
