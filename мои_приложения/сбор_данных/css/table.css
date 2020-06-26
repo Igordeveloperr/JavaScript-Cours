@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+    border:1px solid #000;
+}
+table tr, table tr td, h3{
+    border:1px solid #000;
+}
+p{
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
