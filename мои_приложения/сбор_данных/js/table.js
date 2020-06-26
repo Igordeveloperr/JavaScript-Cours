@@ -10,27 +10,36 @@ class Table
     }
     getTableData()
     {
-        this.tableDataArr = JSON.parse(localStorage.getItem("users")).reverse();
+        this.tableDataArr = JSON.parse(localStorage.getItem("users"));
+        if(this.tableDataArr == null){return false;}else{this.tableDataArr.reverse();}    
     }
     nameOut()
     {
         this.getTableData();
-        let out = "";
-        for(let i = 0; i < this.tableDataArr.length; i++)
+        if(this.tableDataArr == null){return false;}
+        else
         {
-            out += `<p>${this.tableDataArr[i]["name"]}</p>`;
-            this.outNameBlock.innerHTML = out;
+            let out = "";
+            for(let i = 0; i < this.tableDataArr.length; i++)
+            {
+                out += `<p>${this.tableDataArr[i]["name"]}</p>`;
+                this.outNameBlock.innerHTML = out;
+            }
         }
     }
     dateOut()
     {
         this.getTableData();
-        let out = "";
-        for(let i = 0; i < this.tableDataArr.length; i++)
+        if(this.tableDataArr == null){return false;}
+        else
         {
-            out += `<p>${this.tableDataArr[i]["date"]}</p>`;
-            this.outDateBlock.innerHTML = out;
-        }
+            let out = "";
+            for(let i = 0; i < this.tableDataArr.length; i++)
+            {
+                out += `<p>${this.tableDataArr[i]["date"]}</p>`;
+                this.outDateBlock.innerHTML = out;
+            }
+        }    
     }
 }
 
