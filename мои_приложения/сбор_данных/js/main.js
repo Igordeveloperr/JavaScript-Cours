@@ -14,7 +14,7 @@ class Form
         this.btn.addEventListener("click", (e) => 
         {   
             e.preventDefault();
-            const nameReg = /\W\D/,
+            const nameReg = /[а-я]/,
                   dateReg = /\d\d\-\d\d\-\d\d\d\d/;  
             let resName = this.name.value.match(nameReg),
                 resDate = this.date.value.match(dateReg);
