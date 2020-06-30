@@ -11,12 +11,10 @@ class Slider
     }
     slideMoveRight()
     {
-        for(let i = 0; i < this._imgArr.length; i++)
+        let index = 0;
+        return function ()
         {
-            this.#nextBtn.addEventListener("click", () => 
-            {
-                this._imgArr[i].style.marginRight = 800 + "px";
-            });      
+            this._imgArr[index].style.border
         }
     }
 }
