@@ -7,16 +7,28 @@ class Slider
     constructor()
     {
         this._imgArr = document.querySelectorAll(".slider .slids div");
-        this.slideMoveRight();
+        this.moveRight = this.slideMoveRight();
+        this.moveRight();
     }
     slideMoveRight()
     {
-        for(let i = 0; i < this._imgArr.length; i++)
+        let index = 0;
+        return function()
         {
             this.#nextBtn.addEventListener("click", () => 
-            {
-                this._imgArr[i].style.marginRight = 800 + "px";
-            });      
+            {   
+                if(index >= this._imgArr.length)
+                {
+                    console.log("full");
+                    return false;
+                }
+                else
+                {
+                    this._imgArr[index].style.border = 2 + "px solid gold";
+                    index++;
+                }
+                
+            });
         }
     }
 }
