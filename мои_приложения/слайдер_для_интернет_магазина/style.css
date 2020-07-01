@@ -1,0 +1,29 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    width: 90%;
+    margin: 0 auto;
+}
+.card .main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 30px;
+}
+.card .main img{
+    width: 700px;
+    height: 700px;
+}
+.card .outher{
+    padding-top: 20px;
+}
+.card .outher img{
+    width: 100px;
+    height: 100px;
+}
+.active
+{
+    border: 2px solid #000; 
+}
