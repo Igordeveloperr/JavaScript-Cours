@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    border:2px solid #000;
+    overflow: hidden;
+}
+
+#one, #two{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#one img{
+    width: 500px;
+    height: 500px;
+}
+#two img{
+    width: 500px;
+    height: 500px;
+}
