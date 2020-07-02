@@ -3,11 +3,12 @@ const slides = document.querySelectorAll(".slide"),
       outherBlock = document.querySelector(".outher");  
 
 slider = () => 
-{
+{       
     for(let i = 0; i < slides.length; i++)
     {   
         slides[i].addEventListener("click", () => 
         {   
+            for(let i = 0; i < slides.length; i++){slides[i].classList.remove("active");}
             let out = `<img src="${slides[i].getAttribute('src')}">`;
             slides[i].classList.add("active");
             outBlock.innerHTML = out;
