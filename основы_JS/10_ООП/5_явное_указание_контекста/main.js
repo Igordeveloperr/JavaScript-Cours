@@ -28,3 +28,15 @@ let a = test.bind(btn, "red"),
     b = test.bind(btn2, "orange");
 
 btn2.addEventListener("click", b);
+
+// немного практики
+const buttons = document.querySelectorAll(".btn-con button");
+
+function stainBtn(color, borderWidth, borderColor)
+{
+    this.style.background = color;
+    this.style.border = `${borderWidth}px solid ${borderColor}`;
+}
+
+for(let i = 0; i < buttons.length; i++)
+{ buttons[i].addEventListener("click", stainBtn.bind(buttons[i], "green", 10, "red"));}
