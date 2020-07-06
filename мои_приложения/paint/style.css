@@ -1,3 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+}
 #canvas{
     border: 2px solid #000;
+    margin-top: 30px;
+}
+.colors{
+    display: flex;
+    justify-content: center;
+}
+.colors div{
+    width: 50px;
+    height: 50px;
 }
