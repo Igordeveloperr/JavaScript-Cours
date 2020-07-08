@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: #2c3e50;
+}
+.content_wrap{
+    width: 90%;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.category div{
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
