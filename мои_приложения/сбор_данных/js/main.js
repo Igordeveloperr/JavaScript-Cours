@@ -15,7 +15,7 @@ class Form
         {   
             e.preventDefault();
             const nameReg = /[а-я]/,
-                  dateReg = /\d\d\-\d\d\-\d\d\d\d/;  
+                  dateReg = /\d{2}-\d{2}-\d{4}/;  
             let resName = this.name.value.match(nameReg),
                 resDate = this.date.value.match(dateReg);
                 

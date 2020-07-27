@@ -16,3 +16,5 @@ class Animation{
 }
 
 new Animation().startRain();
+
+
