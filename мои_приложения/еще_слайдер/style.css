@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.slider{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+.slider_line{
+    display: flex;
+    border-right: 4px solid #000;
+    transition: 0.5s;
+}
+.slide{
+    min-width: 200px;
+    height: 100px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+}
+.slide[color="red"]{background:red;}
+.slide[color="green"]{background:green;}
+.slide[color="blue"]{background:blue;}
+
+.slider_buttons{
+    margin-top: 30px;
+}
+.slider_buttons button{
+    width: 200px;
+    height: 30px;
+    border:2px solid #000;
+    color:#000;
+    text-transform: uppercase;
+    background: none;
+    transition: all ease 0.5s;
+}
+.slider_buttons button:hover{
+    box-shadow: 10px 0px 10px 0px;
+    color: #fff;
+    background: #000;
+}
+
