@@ -11,19 +11,22 @@
 }
 .slider_line{
     display: flex;
-    border-right: 4px solid #000;
     transition: 0.5s;
 }
 .slide{
     min-width: 200px;
-    height: 100px;
+    height: 150px;
     color: #fff;
     font-size: 34px;
     font-weight: bold;
 }
-.slide[color="red"]{background:red;}
+.slide img{
+    width: 80%;
+    height: 100%;
+}
+/* .slide[color="red"]{background:red;}
 .slide[color="green"]{background:green;}
-.slide[color="blue"]{background:blue;}
+.slide[color="blue"]{background:blue;} */
 
 .slider_buttons{
     margin-top: 30px;
