@@ -20,5 +20,17 @@ let home = {
 console.log(home.key);
 home.open();
 // массив
-let array = ["photo1.img", "app.png", "apple.bmp"];
-console.log(array[1]);
+const array = ["photo1.img", "app.png", "apple.bmp"];
+
+const dataBase = {
+    host: "localhost",
+    port: 80,
+    dbname: "webDBr",
+    password: "123",
+    getInfo(){
+        console.log(`host:${dataBase.host}`);
+    }
+}
+
+console.log(dataBase.host);
+dataBase.getInfo();
